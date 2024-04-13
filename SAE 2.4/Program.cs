@@ -100,7 +100,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        int largeur = 19, hauteur = 20;
+        int largeur, hauteur;
+        Console.Write("veiller saisir la largeur de votre labyrinthe : ");
+        largeur = Convert.ToInt32(Console.ReadLine());
+        Console.Write("veiller saisir la hauteur de votre labyrinthe : ");
+        hauteur = Convert.ToInt32(Console.ReadLine());
+
 
         GenerateuyrDeLabyrinthe labyrintheDeTeste = new GenerateuyrDeLabyrinthe(largeur, hauteur);
         labyrintheDeTeste.GeneratioDuLabirinthe();
